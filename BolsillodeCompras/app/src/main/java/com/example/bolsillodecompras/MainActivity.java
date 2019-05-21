@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void mostrar (View v){
-        Toast.makeText(this,"JIJI me presionaste", Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"JIJI me presionaste", Toast.LENGTH_SHORT).show();
         Intent nueva = new Intent(this,ListaMain.class);
         startActivity(nueva);
     }

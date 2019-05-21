@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Bolsillo de Compras</string>
     <string name="title_activity_lista_main">Lista</string>
+    <string name="nombre">Nombre</string>
+    <string name="categoria">Categoria</string>
+    <string name="introduzca_el_nombre_del_producto">Introduzca el nombre del producto</string>
 </resources>
