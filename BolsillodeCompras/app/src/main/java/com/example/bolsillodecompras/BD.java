@@ -23,7 +23,7 @@ public class BD extends SQLiteOpenHelper {
             + TABLA_NOMBRES + "(" + COLUMNA_ID
             + " integer primary key autoincrement, " + COLUMNA_NOMBRE1
             + " text not null ," + COLUMNA_NOMBRE2 + " text not null"+ ")";
-
+    private static final String q="drop table Lista";
 
 
     public BD(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
@@ -37,20 +37,6 @@ public class BD extends SQLiteOpenHelper {
 
 
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-    }
-
-    public int agregar(String nombre, String categoria){
-        SQLiteDatabase db = this.getWritableDatabase();
-
-        ContentValues values = new ContentValues();
-
-        values.put(COLUMNA_NOMBRE1, nombre);
-        values.put(COLUMNA_NOMBRE2,categoria);
-        long newRowId;
-        newRowId = db.insert(TABLA_NOMBRES, null,values);
-        db.insert(TABLA_NOMBRES, null,values);
-        db.close();
-        return (int) newRowId;
     }
 
     public void obtener(int id){

@@ -23,7 +23,7 @@ public class ListaAgregar extends AppCompatActivity {
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
         EditText textbox = (EditText) findViewById(R.id.editText);
 
-        String[] letra = {"Ninguna","Bebestibles","Conservas","Higiene","Hogar","Tecnologia"};
+        String[] letra = {"Ninguna","Comestibles","Bebestibles","Conservas","Higiene","Hogar","Tecnologia","Otros"};
         spinner.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, letra));
     }
     public void Agregar_producto(View v){
